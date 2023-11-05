@@ -1,3 +1,40 @@
+# Thanks to 
+- [HypoX64](https://github.com/HypoX64/DeepMosaics)
+
+# TUTORIAL : 
+
+[DOWNLOAD ANACONDA](https://www.anaconda.com/download)
+[CUDA 11.8](https://www.anaconda.com/download)
+[cuDNN 8.9.5](https://developer.nvidia.com/rdp/cudnn-archive)
+[MODEL](https://drive.google.com/drive/folders/1LTERcN33McoiztYEwBxMuRjjgxh4DEPs)
+
+
+cmd run as administrator
+
+```sh
+
+V:
+
+cd V:\DEEP_MOSAIC
+
+git clone git@github.com:EKI-INDRADI/DeepMosaics_tested_20231105.git
+cd DeepMosaics
+
+cd  V:\DEEP_MOSAIC\DeepMosaics
+
+conda create -n deep_mosaic_20231105 python=3.6
+conda activate deep_mosaic_20231105
+
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+conda install torch opencv_pyth numpy matplotlib tensorboardX scikit-image cv2
+pip install -r requirements.txt
+
+```
+
+# EKI INDRADI TESTED 2023-11-05
+
+
+
 <div align="center">
   <img src="./imgs/logo.png" width="250"><br><br>
   <img src="https://badgen.net/github/stars/hypox64/deepmosaics?icon=github&color=4ab8a1">&emsp;<img src="https://badgen.net/github/forks/hypox64/deepmosaics?icon=github&color=4ab8a1">&emsp;<a href="https://github.com/HypoX64/DeepMosaics/releases"><img src=https://img.shields.io/github/downloads/hypox64/deepmosaics/total></a>&emsp;<a href="https://github.com/HypoX64/DeepMosaics/releases"><img src=https://img.shields.io/github/v/release/hypox64/DeepMosaics></a>&emsp;<img src=https://img.shields.io/github/license/hypox64/deepmosaics>
