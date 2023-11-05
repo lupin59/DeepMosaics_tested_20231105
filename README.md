@@ -35,13 +35,31 @@ pip install -r requirements.txt
 
 ```
 
-run (ex : removing mosaic)
+run (ex : image removing blur)
 
 ```sh
 
 python deepmosaic.py --media_path "input_file/mosaicimg.jpg" --model_path "pretrained_models/mosaic/clean_face_HD.pth" --gpu_id 0
 
 ```
+
+run (ex : image removing mosaic youknow)
+
+```sh
+
+python deepmosaic.py --media_path "input_file/she.jpg" --model_path "pretrained_models/mosaic/clean_youknow_resnet_9blocks.pth" --gpu_id 0
+
+```
+
+run (ex : video removing mosaic youknow)
+
+```sh
+
+python deepmosaic.py --media_path "input_file/v_mosaic.mp4" --model_path "pretrained_models/mosaic/clean_youknow_video.pth" --fps 24 --gpu_id 0 -ss 00:00:00 -t 00:00:50 --result_dir "result" --mask_threshold 64
+
+```
+
+
 
 # EKI INDRADI TESTED 2023-11-05
 
