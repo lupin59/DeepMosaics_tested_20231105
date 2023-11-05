@@ -4,9 +4,13 @@
 # TUTORIAL : 
 
 [DOWNLOAD ANACONDA](https://www.anaconda.com/download)
+
 [CUDA 11.8](https://www.anaconda.com/download)
+
 [cuDNN 8.9.5](https://developer.nvidia.com/rdp/cudnn-archive)
+
 [MODEL](https://drive.google.com/drive/folders/1LTERcN33McoiztYEwBxMuRjjgxh4DEPs)
+
 
 
 cmd run as administrator
