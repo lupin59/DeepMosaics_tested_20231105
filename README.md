@@ -35,6 +35,14 @@ pip install -r requirements.txt
 
 ```
 
+run (ex : removing mosaic)
+
+```sh
+
+python deepmosaic.py --media_path "input_file/mosaicimg.jpg" --model_path "pretrained_models/mosaic/clean_face_HD.pth" --gpu_id 0
+
+```
+
 # EKI INDRADI TESTED 2023-11-05
 
 
