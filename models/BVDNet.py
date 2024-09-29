@@ -53,6 +53,7 @@ class Encoder3d(nn.Module):
     def forward(self, input):
         return self.model(input)
 
+
 class BVDNet(nn.Module):
     def __init__(self, N=2, n_downsampling=3, n_blocks=4, input_nc=3, output_nc=3,activation=nn.LeakyReLU(0.2)):
         super(BVDNet, self).__init__()
@@ -92,11 +93,13 @@ class BVDNet(nn.Module):
         x = self.limiter(x)
         return x
 
+
 def define_G(N=2, n_blocks=1, gpu_id='-1'):
-    netG = BVDNet(N = N, n_blocks=n_blocks)
-    netG = model_util.todevice(netG,gpu_id)
+    netG = BVDNet(N=N, n_blocks=n_blocks)
+    netG = model_util.todevice(netG, gpu_id)
     netG.apply(model_util.init_weights)
     return netG
+
 
 ################################Discriminator################################
 def define_D(input_nc=6, ndf=64, n_layers_D=1, use_sigmoid=False, num_D=3, gpu_id='-1'):          
